@@ -13,14 +13,15 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Column (
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('Hello World!'),
               Text('Bonjour le Monde!'),
               Container( 
-                margin: EdgeInsets.all(20), 
-                padding: EdgeInsets.all(16), 
+                margin: EdgeInsets.all(30), 
+                padding: EdgeInsets.all(24), 
                 decoration: BoxDecoration( 
-                  color: Colors.greenAccent, 
+                  color: Colors.deepPurple, 
                   borderRadius: BorderRadius.circular(24), 
             ), 
                     child: Text( 
@@ -41,7 +42,7 @@ class MainApp extends StatelessWidget {
               ),
               Row( 
                 mainAxisAlignment: MainAxisAlignment. spaceAround , 
-                crossAxisAlignment: CrossAxisAlignment.center, 
+                crossAxisAlignment: CrossAxisAlignment.start, 
                 children: [ 
                   Icon(Icons.home, color: Colors.blue, size: 40), 
                   Icon(Icons.star, color: Colors.amber, size: 40), 
